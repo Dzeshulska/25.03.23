@@ -1,6 +1,4 @@
-try:
-   user_choose = input("Do you want to work with calc? y/n : ")
-except SyntaxError:
-   raise SyntaxError("You must enter a small letter!")
-else: 
-   print("All right")
+a = (input("First number: "))
+b = (input("Second number: "))
+if not type(a) is int:
+  raise TypeError("Only integers are allowed")
